@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  align-items: center;
+  width: 76px;
+
+  &__label {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    width: 18px;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+
+    &::placeholder {
+      text-transform: uppercase;
+      color: #2B2B2B;
+      font-weight: 600;
+      line-height: 16px;
+    }
+  }
+}

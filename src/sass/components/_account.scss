@@ -1,0 +1,23 @@
+.account {
+  width: 900px;
+  background-color: $white-color;
+  box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
+  // временно
+  height: 640px;
+
+  &__title {
+    background-color: rgba(0, 0, 0, 0.0289572);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    display: flex;
+  }
+
+  &__header {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    font-style: normal;
+  }
+}

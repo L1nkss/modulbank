@@ -1,0 +1,36 @@
+.navigation {
+  @include list-restore();
+  width: 276px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    padding: 22px 9px 21px 10px;
+    position: relative;
+
+    &--active {
+      opacity: 1;
+      &::after {
+        content: "";
+        width: 67%;
+        height: 5px;
+        background-color: #8DC540;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+}

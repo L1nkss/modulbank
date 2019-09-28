@@ -1,0 +1,10 @@
+@mixin list-restore() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin desktop-max-width {
+  margin: 0 auto;
+  max-width: $max-width;
+}

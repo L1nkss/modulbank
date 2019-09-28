@@ -1,5 +1,18 @@
-body {
-  background-color: red;
-  height: 300px;
-  width: 500px;
-}
+// helpers
+@import './helpers/variables';
+@import './helpers/mixins';
+
+// общие
+@import './base/general';
+
+// Компоненты
+@import './components/search';
+@import './components/navigation';
+@import './components/profile';
+@import './components/toggle';
+@import './components/button';
+@import './components/account';
+
+//
+@import './layout/header';
+@import './layout/main';
