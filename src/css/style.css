@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -13,6 +14,30 @@ body {
 
 a {
   text-decoration: none; }
+
+.triangle {
+  position: relative; }
+  .triangle::after, .triangle::before {
+    content: "";
+    position: absolute; }
+  .triangle::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 25px;
+    top: -6.5px;
+    right: -15px;
+    background-color: white;
+    border-bottom: 1px solid #d0d0d0;
+    transform: rotate(45deg); }
+  .triangle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1); }
 
 .search {
   display: flex;
@@ -161,10 +186,9 @@ a {
     margin-right: 20px; }
 
 .account {
-  width: 900px;
   background-color: #ffffff;
-  box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
-  height: 640px; }
+  height: 522px;
+  position: relative; }
   .account__title {
     background-color: rgba(0, 0, 0, 0.0289572);
     padding-top: 15px;
@@ -177,6 +201,218 @@ a {
     line-height: 28px;
     margin: 0;
     font-style: normal; }
+  .account__footer {
+    position: -webkit-sticky;
+    position: sticky;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282); }
+
+.payment {
+  width: 281px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 27px;
+  margin-bottom: 16px; }
+  .payment__bill {
+    color: black; }
+  .payment__date {
+    text-transform: none; }
+  .payment__summ {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 54px;
+    color: #CF4545;
+    margin: 0; }
+  .payment__account {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828A96;
+    margin: 0;
+    margin-bottom: 9px; }
+  .payment__status {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    background: #81C624;
+    border-radius: 125px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+
+.company-card {
+  width: 545px;
+  margin-left: 184px;
+  position: relative;
+  overflow: hidden;
+  /* Обрезаем лишнее */
+  display: flex;
+  background-color: white;
+  flex-direction: column; }
+  .company-card__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 23px;
+    font-style: normal;
+    font-weight: normal;
+    color: #2C2F32; }
+  .company-card__details {
+    width: 230px;
+    padding-top: 10px; }
+  .company-card__information {
+    display: flex;
+    padding: 0 30px;
+    padding-top: 16px;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px; }
+  .company-card__payment {
+    background: #F2F2F2;
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102);
+    padding-top: 19px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-bottom: 20px; }
+  .company-card__payment-text {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px; }
+
+.payment-order {
+  width: 900px;
+  background-color: #ffffff;
+  box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
+  position: relative;
+  height: 640px; }
+
+.assessment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 165px; }
+  .assessment__item {
+    display: flex;
+    padding: 3px 22px 0 2px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px; }
+  .assessment__description {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
+    color: #84AFD7;
+    text-align: center;
+    width: 90px;
+    line-height: 12px; }
+  .assessment__value {
+    margin: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #82C27A;
+    border-top-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px; }
+    .assessment__value--green {
+      background-color: #A5D475;
+      color: white;
+      font-size: 18px;
+      border: 0; }
+  .assessment__count {
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+    -webkit-text-decoration: 1px solid black;
+            text-decoration: 1px solid black; }
+  .assessment__count-text {
+    font-size: 8px;
+    display: block; }
+  .assessment__text {
+    margin: 0; }
+
+.identification {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 17px; }
+  .identification__item {
+    margin-bottom: 9px; }
+
+.toolbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 545px;
+  margin: 0 auto;
+  display: flex; }
+  .toolbar__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2C2F32;
+    display: inline-block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 36px;
+    padding-right: 20px; }
+
+.commission {
+  width: 545px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+  padding-top: 19px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 184px; }
+  .commission__value {
+    margin: 0; }
+  .commission__description {
+    margin: 0; }
+
+.scrollbar {
+  height: 95.5%;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 3px;
+  width: 6px;
+  right: 5px; }
+  .scrollbar::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.09);
+    height: 83%;
+    top: 0; }
 
 .header {
   display: flex;

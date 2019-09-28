@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Modulbank тестовое задание</title>
 </head>
@@ -60,81 +61,88 @@
     </div>
   </header>
   <main class="main">
-    <article class="account">
+    <section class="payment-order">
       <header class="account__title">
         <button class="button button--article"></button>
         <h3 class="account__header">Платежное поручение № 5241234 от 23.09.2015</h3>
       </header>
-    </article>
-    <!-- <section class="payment-commission">
-      <header class="payment-commission__header">
-        <a href="#" class="payment-commission__button"></a>
-        <h4 class="payment-commission__title">Платежное поручение № 5241234 от 23.09.2015</h4>
-      </header>
-      <div class="">
-        <h2 class="receipt__payment">- 23 500, 00 Р</h2>
-        <p class="receipt__bill">со счёта: Расчетный счёт(***012345)</p>
-        <p class="receipt__fulfillment">Исполнен, 21 июня 15:33</p>
-      </div>
-      <article class="receipt">
-        <div class="receipt__information">
-          <div class="receipt__bill">
-            <h4>ООО "Родные просторы"</h4>
-            <ul>
-              <li>ИНН: 22341497819132</li>
-              <li>Банк: ОАО Сбербанк</li>
-              <li>БИК: 2352362365</li>
-              <li>Счет: 40802810970010000395</li>
-            </ul>
-          </div>
-          <div class="receipt__assessment">
-            <ul>
-              <li>
-                <a href="#">Высокая финансовая устойчивость</a>
-                <p>
-                  <span>88</span>
-                </p>
-              </li>
-              <li>
-                <a href="#">Высокая благонадежность</a>
-                <p>
-                  <span>100</span>
-                </p>
-              </li>
-              <li>
-                <a href="#">Кредитоспособность 44,5 млрд Р</a>
-                <p>
-                  <span>1 класс</span>
-                </p>
-              </li>
-            </ul>
-          </div>
+      <article class="account data-simplebar">
+        <div class="account__summ payment">
+          <h3 class="payment__summ">– 23 500,00 ₽</h3>
+          <p class="payment__account">со счета: <span class="payment__bill">Расчетный счет (***012345)</span></p>
+          <p class="payment__status">Исполнен, <span class="payment__date">21 июня 15:33</span></p>
         </div>
-        <div class="">
-          Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽
+        <section class="account__card company-card triangle">
+          <div class="company-card__information">
+            <div class="company-card__details">
+              <h3 class="company-card__title">ООО "Родные просторы"</h3>
+              <ul class="company-card__identification identification">
+                <li class="identification__item">ИНН: 22341497819132</li>
+                <li class="identification__item">Банк: ОАО Сбербанк</li>
+                <li class="identification__item">БИК: 2352362365</li>
+                <li class="identification__item">Счет: 40802810970010000395</li>
+              </ul>
+            </div>
+            <ul class="company-card__assessment assessment">
+              <li class="assessment__item">
+                <a class="assessment__description" href="#">Высокая финансовая устойчивость</a>
+                <p class="assessment__value">
+                  <span class="assessment__count">88</span>
+                </p>
+              </li>
+              <li class="assessment__item">
+                <a class="assessment__description" href="#">Высокая<br> благонадежность</a>
+                <p class="assessment__value">
+                  <span class="assessment__count">100</span>
+                </p>
+              </li>
+              <li class="assessment__item">
+                <a class="assessment__description" href="#">Кредитоспособность<br> 44,5 млрд ₽ </a>
+                <p class="assessment__value assessment__value--green">
+                  <span class="assessment__count">1 <span class="assessment__count-text">Класс</span></span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="company-card__payment">
+            <p class="company-card__payment-text">
+              Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽
+            </p>
+          </div>
+        </section>
+        <div class="commission">
+          <p class="commission__value">Комиссия банка: 70 р.</p>
+          <p class="commission__description">
+              Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.
+          </p>
+        </div>
+        <div class="scrollbar">
+
         </div>
       </article>
-      <div class="">
-        <p>Комиссия банка: 70 р.</p>
-        <p>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк. </p>
-      </div>
+      <footer class="account__footer">
+        <ul class="toolbar">
+          <li class="toolbar__item">
+            <span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0V1.66667C14.6121 1.66667 18.3333 5.38789 18.3333 10C18.3333 14.6121 14.6121 18.3333 10 18.3333C5.38789 18.3333 1.66667 14.6121 1.66667 10C1.66667 7.27786 2.98751 4.87769 5 3.35938V7.5H6.66667V1.66667V0.833333H5.83333H0V2.5H3.41146C1.32783 4.33226 0 7.01412 0 10C0 15.5129 4.48711 20 10 20C15.5129 20 20 15.5129 20 10C20 4.48711 15.5129 0 10 0Z" fill="black"/>
+              </svg>
+            </span>
+            <a class="toolbar__name" href="#">Повторить</a>
+          </li>
+          <li class="toolbar__item">
+            <a class="toolbar__name" href="#">В избранное</a>
+          </li>
+          <li class="toolbar__item">
+            <a class="toolbar__name" href="#">Спросить</a>
+          </li>
+          <li class="toolbar__item">
+            <a class="toolbar__name" href="#">Действия</a>
+          </li>
+        </ul>
+      </footer>
     </section>
-    <div class="">
-      <ul>
-        <li>
-          <a href="#">Повторить</a>
-        </li>
-        <li>
-          <a href="#">В избранное</a>
-        </li>
-        <li>
-          <a href="#">Спросить</a>
-        </li>
-        <li>
-          <a href="#">Действия</a>
-        </li>
-      </ul>
-    </div> -->
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 </html>

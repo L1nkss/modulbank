@@ -1,9 +1,45 @@
 .account {
-  width: 900px;
+  // width: 900px;
   background-color: $white-color;
-  box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
-  // временно
-  height: 640px;
+  // box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
+  // // временно
+  // height: 640px;
+  // height: 1177px;
+  // overflow-y: scroll;
+  height: 522px;
+  position: relative;
+
+//   ::-webkit-scrollbar {
+//     height: ((15px * 2) + 5px);
+//    background-color: rgba(255,255,255,0);
+//  }
+ 
+//  ::-webkit-scrollbar-track,
+//  ::-webkit-scrollbar-thumb {
+//    border: 16px solid rgba(255,255,255,0);
+//    background-clip: padding-box;
+//  }
+ 
+//  ::-webkit-scrollbar-track {
+//    background-color: #ccc;
+//  }
+ 
+//  ::-webkit-scrollbar-thumb {
+//    background-color: #212121;
+//    &:hover {
+//      border: 15px solid rgba(255,255,255,0);
+//    }
+//  }
+
+  // &::-webkit-scrollbar-track-piece:end {
+  //   background-color: transparent;
+  //   margin-bottom: 10px; 
+  // }
+
+  // &::-webkit-scrollbar-track-piece:start {
+  //     background: transparent;
+  //     margin-top: 10px;
+  // }
 
   &__title {
     background-color: rgba(0, 0, 0, 0.0289572);
@@ -19,5 +55,12 @@
     line-height: 28px;
     margin: 0;
     font-style: normal;
+  }
+
+  &__footer {
+    position: sticky;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282);
+
+    // box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282);
   }
 }
