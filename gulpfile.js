@@ -5,6 +5,7 @@ const
     sass = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
     srcPath = './src',
+    buildPath = './build',
     autoprefixer = require('autoprefixer'),
     postcss = require('gulp-postcss'),
     rename = require('gulp-rename'),
@@ -20,7 +21,7 @@ function gulpSass() {
     .pipe(postcss([
       autoprefixer(),
     ]))
-    .pipe(gulp.dest(`${srcPath}/css`))
+    .pipe(gulp.dest(`${buildPath}/css`))
     .pipe(browserSync.stream());
 };
 
@@ -36,11 +37,12 @@ function sprite() {
 function server() {
   browserSync.init({
     server: {
-      baseDir: srcPath
+      baseDir: buildPath
     }
   });
 
-  gulp.watch(`${srcPath}/*.html`, browserReload);
+  // gulp.watch(`${srcPath}/*.html`, browserReload);
+  gulp.watch(`${buildPath}/*.html`, browserReload);
   gulp.watch(`${srcPath}/sass/**/*.{sass,scss}`,gulpSass)
 }
 
@@ -84,5 +86,5 @@ function copy() {
 }
 
 exports.sprite = sprite;
-exports.default = gulp.series(gulpSass, server);
+exports.default = gulp.series(gulpSass, html,  server);
 exports.build = gulp.series(clean, copy, html, gulpSass, minifyCSS);
