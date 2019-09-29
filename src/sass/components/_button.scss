@@ -1,32 +1,35 @@
 .button {
-  // width: 42px;
-  // height: 42px;
-  // background-color: $white-color;
-  // border-radius: 50%;
   background-color: transparent;
   position: relative;
   border: 0;
+  transition: $transition-time;
 
-  &::after {
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $green-theme-color;
+  }
+
+  &::after,
+  &::before {
     content: "";
     position: absolute;
-    background-color: #00417B;
+    background-color: $button-line-color;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 20px;
     height: 2px;
   }
 
+  &::after {
+    transform: translate(-50%, -50%);
+  }
+
   &::before {
-    content: "";
-    position: absolute;
-    background-color: #00417B;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
-    width: 20px;
-    height: 2px;
   }
 
   &--header {
@@ -42,5 +45,14 @@
     height: 30px;
     transform: rotate(45deg);
     margin-right: 20px;
+    
+    &:after,
+    &:before {
+      background-color: $light-black;
+    }
+
+    &:hover {
+      transform: rotate(135deg);
+    }
   }
 }

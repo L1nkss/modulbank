@@ -12,7 +12,11 @@
     font-size: 14px;
     line-height: 16px;
     color: $white-color;
-    font-style: normal;
-    font-weight: normal;
+
+    @include font-styles();
+  }
+
+  &__icon {
+    display: block;
   }
 }

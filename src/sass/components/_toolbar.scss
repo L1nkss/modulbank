@@ -1,0 +1,39 @@
+.toolbar {
+  width: 555px;
+  margin-left: 178px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 178px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-height: 58px;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__icon {
+    margin-right: 11px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2C2F32;
+    margin: 0;
+
+    @include font-styles();
+  }
+}

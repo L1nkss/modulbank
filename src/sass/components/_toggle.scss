@@ -8,12 +8,21 @@
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
+  transition: $transition-time; 
+
+  &:hover {
+    animation: arrow-down $transition-time ease-in-out 2;
+  }
+
+  &:focus {
+    transform: scale(2);
+  }
 
   &::after {
     content: "";
     width: 4px;
     height: 1px;
-    background-color: white;
+    background-color: $white-color;
     position: absolute;
     top: 0;
     transform: rotate(-45deg) translate(2px)
@@ -23,7 +32,7 @@
     content: "";
     width: 4px;
     height: 1px;
-    background-color: white;
+    background-color: $white-color;
     position: absolute;
     top: 0;
     transform: rotate(45deg) translate(-2px);

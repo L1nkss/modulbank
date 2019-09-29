@@ -1,0 +1,21 @@
+.commission {
+  width: 545px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $body-bg-color;
+  padding-top: 19px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  //
+  margin-left: 184px;
+
+  @include font-styles();
+
+  &__value {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

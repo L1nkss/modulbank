@@ -1,0 +1,38 @@
+.progress-bar {
+
+  &__circles {
+    display: block;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__value {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+  }
+
+  &__circle {
+    fill: transparent;
+    stroke-width: 2;
+
+    &:nth-child(1) {
+      stroke: #ebe9e9;
+    }
+
+    &--88 {
+      stroke: $green-theme-color;
+      stroke-dasharray: 110.88px 126px;
+    }
+
+    &--100 {
+      stroke: $green-theme-color;
+      stroke-dasharray: 126px 126px;
+    }
+  }
+}

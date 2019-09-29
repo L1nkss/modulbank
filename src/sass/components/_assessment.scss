@@ -1,0 +1,60 @@
+.assessment {
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+
+  @include list-restore();
+
+  &__item {
+    display: flex;
+    padding: 3px 20px 3px 2px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__description {
+    font-size: 9px;
+    line-height: 10px;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #84AFD7;
+    text-align: center;
+    width: 90px;
+  }
+
+  &__value {
+    margin: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    background-color: #A5D475;
+    color: $white-color;
+    font-size: 18px;
+    border: 0;
+
+    
+    @include flex-center();
+
+    @include font-styles();
+  }
+
+  &__count {
+    text-decoration-style: solid;
+    text-decoration: 1px solid $black-color;
+    font-family: Verdana;
+  }
+
+  &__count-text {
+    font-size: 8px;
+    display: block;
+    font-weight: 300;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

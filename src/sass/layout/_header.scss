@@ -17,17 +17,17 @@
 
   &__logo {
     margin: 0;
+    margin-right: 27px;
   }
 
   &__navigation {
-    margin-right: 117px;
+    margin-right: 101px;
   }
 
   &__search {
-    padding: 16px 31px 15px 21px;
+    padding: 17px 10px 14px 21px;
     width: 14%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
     background-color: $white-color;
@@ -45,35 +45,4 @@
     display: flex;
     position: relative;
   }
-
-  // &__add-button {
-  //   width: 42px;
-  //   height: 42px;
-  //   background-color: $white-color;
-  //   border-radius: 50%;
-  //   position: relative;
-  //   margin-right: auto;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     background-color: #00417B;
-  //     top: 50%;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%);
-  //     width: 20px;
-  //     height: 2px;
-  //   }
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     background-color: #00417B;
-  //     top: 50%;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%) rotate(90deg);
-  //     width: 20px;
-  //     height: 2px;
-  //   }
-  // }
 }

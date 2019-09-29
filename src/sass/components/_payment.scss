@@ -1,0 +1,52 @@
+.payment {
+  width: 281px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 27px;
+  margin-bottom: 15px;
+
+  &__bill {
+    color: $black-color;
+  }
+
+  &__date {
+    text-transform: none;
+  }
+
+  &__summ {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 54px;
+    color: #CF4545;
+    margin: 0;
+  }
+
+  &__account {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828A96;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  &__status {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: flex-end;
+    color: $white-color;
+    background: #81C624;
+    border-radius: 125px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 3px 10px;
+  }
+}

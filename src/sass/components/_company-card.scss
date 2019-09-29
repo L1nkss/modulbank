@@ -1,0 +1,53 @@
+.company-card {
+  width: 545px;
+  margin-left: 184px;
+  margin-right: 174px;
+  position: relative;
+  display: flex;
+  background-color: $white-color;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 23px;
+    color: $light-black;
+
+    @include font-styles();
+  }
+
+  &__details {
+    width: 230px;
+    padding-top: 10px;
+  }
+
+  &__information {
+    display: flex;
+    padding: 0 30px;
+    padding-top: 16px;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border: 1px solid $border-card-color;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba($black-color, .390682), 0px 2px 3px rgba($black-color, .0651891);
+  }
+
+  &__payment {
+    background: #F2F2F2;
+    border-left: 1px solid $border-card-color;;
+    border-right: 1px solid $border-card-color;;
+    border-bottom: 1px solid $border-card-color;;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 1px rgba($black-color, .239102), 0px 4px 15px rgba($black-color, .0869282), 0px 2px 3px rgba($black-color, .0651891);
+    padding: 19px 45px 20px 30px;
+  }
+
+  &__payment-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include font-styles();
+  }
+}
