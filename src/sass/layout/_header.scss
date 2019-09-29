@@ -31,6 +31,9 @@
     position: relative;
     background-color: $white-color;
 
+    //
+    width: 168px;
+
     &::after {
       content: "";
       position: absolute;

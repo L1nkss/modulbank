@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  width: 76px;
 
   // при фокусе/наведении на инпут
   &__input:focus + &__label,
@@ -28,6 +27,11 @@
     &:hover {
       outline: 1px solid $green-theme-color;
       width: 100%;
+    }
+
+    &:focus {
+      width: 100%;
+      border-bottom: 1px solid $green-theme-color;
     }
 
     &::placeholder {
