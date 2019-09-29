@@ -4,9 +4,12 @@
 @import "./helpers/mixins";
 
 // общие
+@import "./base/reset";
+
 @import "./base/fonts";
 
 @import "./base/general";
+
 
 // Компоненты
 @import "./components/search";
