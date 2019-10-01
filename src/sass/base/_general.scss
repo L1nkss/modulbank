@@ -12,6 +12,11 @@ body {
   margin: 0 auto;
   background-color: $body-bg-color;
   font-family: $primary-font;
+
+  height: 100vh;
+
+  // тест
+  overflow: hidden;
 }
 
 a {
