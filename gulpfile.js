@@ -86,5 +86,5 @@ function copy() {
 }
 
 exports.sprite = sprite;
-exports.default = gulp.series(gulpSass, html,  server);
+exports.default = gulp.series(clean,copy, gulpSass, copy, html,  server);
 exports.build = gulp.series(clean, copy, html, gulpSass, minifyCSS);
