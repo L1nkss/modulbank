@@ -1,7 +1,10 @@
 .main {
-  @include desktop-max-width();
-
   background-color: #F2F2F2;
-  display: flex;
-  justify-content: flex-end;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    @include desktop-max-width();
+  }
 }
