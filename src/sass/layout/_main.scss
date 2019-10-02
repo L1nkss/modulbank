@@ -3,6 +3,11 @@
 
   // тест
   height: calc(100vh - 60px);
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  @include adaptability(horizontal-scroll) {
+  }
 
   &__wrapper {
     display: flex;
@@ -10,6 +15,7 @@
 
     // тест
     height: inherit;
+    min-width: 1024px;
 
     @include desktop-max-width();
   }

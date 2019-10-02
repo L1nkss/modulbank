@@ -24,6 +24,10 @@
 
 // Миксин для адаптивности
 @mixin adaptability ($breakpoint) {
+  @if ($breakpoint == horizontal-scroll) {
+    @media (max-width: $horizontal-main-scroll) {@content}
+  };
+
   @if ($breakpoint == tablet) {
     @media (max-width: $desktop) {@content}
   };
@@ -32,7 +36,7 @@
     @media (max-width: $tablet) {@content}
   };
 
-  @if ($breakpoint == desktop) {
-    @media (min-width: $desktop) {@content}
-  };
+  // @if ($breakpoint == desktop) {
+  //   @media (min-width: $desktop) {@content}
+  // };
 };
