@@ -39,8 +39,4 @@
   @if ($breakpoint == mobile) {
     @media (max-width: $mobile) {@content}
   };
-
-  // @if ($breakpoint == desktop) {
-  //   @media (min-width: $desktop) {@content}
-  // };
 };

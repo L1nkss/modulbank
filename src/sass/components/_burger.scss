@@ -16,7 +16,6 @@
 .burger__toggle {
   width: 25px;
   height: 2px;
-  // background-color: transparent;
   background-color: $white-color;
   display: inline-block;
   position: absolute;
@@ -33,7 +32,6 @@
     display: block;
     position: absolute;
     top: -8px;
-    // transform: translateY(8px) rotate(45deg);
     transition: .6s;
   }
 
@@ -45,21 +43,17 @@
     display: block;
     position: absolute;
     top: 8px;
-    // transform: translateY(-8px) rotate(-45deg);
     transition: .6s;
   }
 
   &--hide {
-    // background-color: $black-color;
     background-color: transparent;
 
     &::before {
-      // transform: translateY(0) rotate(0);
       transform: translateY(-8px) rotate(-45deg);;
     }
 
     &::after {
-      // transform: translateY(0) rotate(0);
       transform: translateY(8px) rotate(45deg);
     }
   }

@@ -12,10 +12,7 @@ body {
   margin: 0 auto;
   background-color: $body-bg-color;
   font-family: $primary-font;
-
   height: 100vh;
-
-  // тест
   overflow: hidden;
 }
 
@@ -87,20 +84,4 @@ a {
   50% {transform: rotate(15deg)}
 
   100% {transform: rotate(0)}
-}
-
-// scrollbar класс
-// important нужен, чтобы перезаписать стили.
-
-.os-scrollbar {
-  margin-right: 3px;
-}
-
-.os-scrollbar-track {
-  background: rgba($black-color, .05) !important;
-}
-
-.os-scrollbar-handle {
-  height: 81.6741% !important;
-  background: rgba($black-color, .09) !important;
 }

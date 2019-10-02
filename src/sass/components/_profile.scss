@@ -1,6 +1,6 @@
 .profile {
   display: flex;
-  width: 224px;
+  // width: 224px;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -18,5 +18,7 @@
 
   &__icon {
     display: block;
+    //
+    margin-right: 20px;
   }
 }

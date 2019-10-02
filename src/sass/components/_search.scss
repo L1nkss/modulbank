@@ -3,6 +3,10 @@
   align-items: center;
   flex-direction: row-reverse;
 
+  @include adaptability(tablet-intermediate) {
+    display: none;
+  }
+
   // при фокусе/наведении на инпут
   &__input:focus + &__label,
   &__input:hover + &__label {
