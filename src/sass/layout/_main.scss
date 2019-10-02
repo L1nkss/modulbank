@@ -2,7 +2,7 @@
   background-color: #F2F2F2;
 
   // тест
-  height: 100%;
+  height: calc(100vh - 60px);
 
   &__wrapper {
     display: flex;
