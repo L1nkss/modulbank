@@ -59,7 +59,7 @@ function clean() {
 }
 
 function minifyCSS() {
-  return gulp.src(`src/css/style.css`)
+  return gulp.src(`build/css/style.css`)
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('build/css'))
 }
