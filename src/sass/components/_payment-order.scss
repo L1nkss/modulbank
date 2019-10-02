@@ -3,4 +3,6 @@
   background-color: $white-color;
   box-shadow: -8px 9px 25px rgba(49, 68, 93, .23112);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }

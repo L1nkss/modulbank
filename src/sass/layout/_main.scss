@@ -1,9 +1,15 @@
 .main {
   background-color: #F2F2F2;
 
+  // тест
+  height: 100%;
+
   &__wrapper {
     display: flex;
     justify-content: flex-end;
+
+    // тест
+    height: inherit;
 
     @include desktop-max-width();
   }

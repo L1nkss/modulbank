@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 @mixin list-restore() {
   list-style: none;
   margin: 0;
@@ -19,3 +21,18 @@
   justify-content: center;
   align-items: center;
 }
+
+// Миксин для адаптивности
+@mixin adaptability ($breakpoint) {
+  @if ($breakpoint == tablet) {
+    @media (max-width: $desktop) {@content}
+  };
+
+  @if ($breakpoint == mobile) {
+    @media (max-width: $tablet) {@content}
+  };
+
+  @if ($breakpoint == desktop) {
+    @media (min-width: $desktop) {@content}
+  };
+};
