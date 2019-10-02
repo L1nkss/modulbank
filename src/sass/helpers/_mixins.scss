@@ -29,11 +29,15 @@
   };
 
   @if ($breakpoint == tablet) {
-    @media (max-width: $desktop) {@content}
+    @media (max-width: $tablet) {@content}
+  };
+
+  @if ($breakpoint == tablet-intermediate) {
+    @media (max-width: $tablet-intermediate) {@content}
   };
 
   @if ($breakpoint == mobile) {
-    @media (max-width: $tablet) {@content}
+    @media (max-width: $mobile) {@content}
   };
 
   // @if ($breakpoint == desktop) {

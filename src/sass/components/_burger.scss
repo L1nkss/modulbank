@@ -1,0 +1,66 @@
+.burger {
+  width: 25px;
+  height: 18px;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+  display: none;
+
+  @include adaptability(tablet-intermediate) {
+    display: block;
+  }
+}
+
+.burger__toggle {
+  width: 25px;
+  height: 2px;
+  // background-color: transparent;
+  background-color: $white-color;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .6s;
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: $white-color;
+    display: block;
+    position: absolute;
+    top: -8px;
+    // transform: translateY(8px) rotate(45deg);
+    transition: .6s;
+  }
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: $white-color;
+    display: block;
+    position: absolute;
+    top: 8px;
+    // transform: translateY(-8px) rotate(-45deg);
+    transition: .6s;
+  }
+
+  &--hide {
+    // background-color: $black-color;
+    background-color: transparent;
+
+    &::before {
+      // transform: translateY(0) rotate(0);
+      transform: translateY(-8px) rotate(-45deg);;
+    }
+
+    &::after {
+      // transform: translateY(0) rotate(0);
+      transform: translateY(8px) rotate(45deg);
+    }
+  }
+}

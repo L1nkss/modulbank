@@ -43,7 +43,8 @@ function server() {
 
   gulp.watch(`${srcPath}/*.html`, gulp.series(html,browserReload));
   // gulp.watch(`${buildPath}/*.html`, browserReload);
-  gulp.watch(`${srcPath}/sass/**/*.{sass,scss}`,gulpSass)
+  gulp.watch(`${srcPath}/sass/**/*.{sass,scss}`,gulpSass);
+  gulp.watch(`${srcPath}/script/*.js`, gulp.series(copy, browserReload))
 }
 
 function browserReload(done) {
