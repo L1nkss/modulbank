@@ -9,7 +9,7 @@
   }
 
   &__panel {
-    width: 87%;
+    width: calc(100% - 168px);
     display: flex;
     align-items: center;
     justify-content: space-between;
