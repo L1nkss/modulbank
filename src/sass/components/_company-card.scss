@@ -29,10 +29,7 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 30px 21px;
-    // border-radius: 5px;
-    box-shadow: 0px 0px 1px rgba($black-color, .390682), 0px 2px 3px rgba($black-color, .0651891);
-
-    // тетс
+    box-shadow: 0px 0px 1px rgba($black-color, .390682), 0px 3px 5px rgba($black-color, .0869282);
     border-bottom: 1px solid rgba($black-color, .0651891);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -40,10 +37,10 @@
   }
 
   &__payment {
-    background: $light-white;
+    background: #F2F2F2;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0px 0px 1px rgba($black-color, .239102), 0px 4px 15px rgba($black-color, .0869282), 0px 2px 3px rgba($black-color, .0651891);
+    box-shadow: 0px 0px 1px rgba($black-color, .029102), 0px 4px 15px rgba($black-color, .0869282), 0px 2px 3px rgba($black-color, .0651891);
     padding: 19px 45px 20px 30px;
   }
 
