@@ -22,11 +22,12 @@
     }
 
     @include adaptability(tablet) {
-      padding-left: 20px;
+      padding-left: 10px;
     }
 
     @include adaptability(tablet-intermediate) {
       flex-direction: row-reverse;
+      padding-left: 20px;
       width: calc(100% - 124px);
     }
   }
