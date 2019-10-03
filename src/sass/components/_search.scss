@@ -10,11 +10,17 @@
   // при фокусе/наведении на инпут
   &__input:focus + &__label,
   &__input:hover + &__label {
-    display: none;
+    // display: none;
   }
 
   &__label {
     margin-right: 5px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 
   &__icon {
@@ -27,15 +33,14 @@
     border: 0;
     width: 80%;
     padding: 4px 0px 4px 3px;
+    transition: $transition-time;
 
     &:hover {
-      outline: 1px solid $green-theme-color;
-      width: 100%;
+      box-shadow: 0px 1px 0px 0px $green-theme-color;
     }
 
     &:focus {
-      width: 100%;
-      border-bottom: 1px solid $green-theme-color;
+      box-shadow: 0px 1px 0px 0px $green-theme-color;
     }
 
     &::placeholder {
