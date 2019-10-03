@@ -6,8 +6,6 @@
   &__wrapper {
     display: flex;
     position: relative;
-
-    @include desktop-max-width();
   }
 
   &__panel {

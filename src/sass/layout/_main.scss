@@ -12,11 +12,7 @@
   &__wrapper {
     display: flex;
     justify-content: flex-end;
-
-    // тест
     height: inherit;
     min-width: 1024px;
-
-    @include desktop-max-width();
   }
 }
