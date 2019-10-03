@@ -48,14 +48,14 @@ a {
 
   &::before {
     content: "";
-    width: 42px;
+    width: 43px;
     height: 25px;
-    top: -6.5px;
-    right: -15px;
-    background-color: $white-color;
-    border-bottom: 1px solid #d0d0d0;
+    top: -7px;
+    right: -16px;
+    background-color: #ffffff;
     transform: rotate(45deg);
     z-index: 1;
+    border-bottom: 1px solid rgba($black-color, .0651891);
   }
 
   &::after {
