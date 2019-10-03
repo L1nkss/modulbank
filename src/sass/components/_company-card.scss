@@ -7,6 +7,10 @@
   background-color: $white-color;
   flex-direction: column;
 
+  // тест
+  border: 1px solid rgba($black-color, .0651891);
+  border-radius: 5px;
+
   &__title {
     margin: 0;
     font-size: 20px;
@@ -25,16 +29,18 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 30px 21px;
-    // border: 1px solid $border-card-color;
-    border-radius: 5px;
+    // border-radius: 5px;
     box-shadow: 0px 0px 1px rgba($black-color, .390682), 0px 2px 3px rgba($black-color, .0651891);
+
+    // тетс
+    border-bottom: 1px solid rgba($black-color, .0651891);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
 
   &__payment {
     background: $light-white;
-    // border-left: 1px solid $border-card-color;;
-    // border-right: 1px solid $border-card-color;;
-    // border-bottom: 1px solid $border-card-color;;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0px 0px 1px rgba($black-color, .239102), 0px 4px 15px rgba($black-color, .0869282), 0px 2px 3px rgba($black-color, .0651891);
